@@ -2,10 +2,10 @@
 
 const word = require('../index')
 
-function writeToConsole() {
+function writeToConsole(output) {
   process.stdout.clearLine();
   process.stdout.cursorTo(0);
-  process.stdout.write(word());
+  process.stdout.write(output);
 }
 
 console.log("Choosing a word for you...");
@@ -13,7 +13,9 @@ console.log("Choosing a word for you...");
 (async function demo() {
   for (let i = 0; i < 500; i++) {
     await new Promise(resolve => setTimeout(resolve, 5));
-    writeToConsole();
+    let spinner = ["/ ", "—", "\\ ", "| "]
+    output = spinner[i % 4] + word()
+    writeToConsole(output);
   }
-})().then( () => console.log('') );
+})().then( () => writeToConsole("=> " + word() + "\n") );
 
