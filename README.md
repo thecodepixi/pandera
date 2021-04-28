@@ -1,58 +1,40 @@
 # Pandera
 
-Pandera is a fun little package that lets you replace the word "pandemic" with a randomly selected, similar sounding word (I think we can all agree we're collectively pandemic fatigued 🙃)
+Pandera is a fun little package that lets you replace the word "pandemic" with a randomly selected, similar sounding word (I think we can all agree we're collectively pandemic fatigued 🙃).
 
-## Installation
+## Usage
 
-this package can be installed using either `npm` or `yarn`
+This package can be installed using either `npm` or `yarn`.
 
-### Global Installation
+### Use In Your Console
 
-#### `npm` installation
+Install by running `npm install --global pandera` or `yarn global add pandera` in your terminal.
 
-`npm install --global pandera`
-
-#### `yarn` installation`
-
-`yarn global add pandera`
+You can now call it anywhere by typing `pandera` in your terminal to get a random p-word.
 
 ### Importing into your project
 
-#### `npm` installation
+Install by running `npm install -d pandera` or `yarn add --dev pandera` in your project directory.
 
-`npm install --d pandera`
-
-#### `yarn` installation`
-
-`yarn add --dev pandera`
-
-after adding the package to your project, you can import the package `pandera` to use it:
+After adding the package to your project, you can import the `'pandera'` package to use it:
 
 ```js
 const pandera = require('pandera');
 ```
 
-## Usage Instructions
-
-### CLI / Console
-
-after installing `pandera` globally, call it using its name (`pandera`) to receive a random p-word.
-
-### In a project
-
-after importing the package, call `pandera()` to receive a random p-word.
+After importing the package, calling the `pandera()` function will return a random p-word.
 
 ## Contributing
 
-want to contribute to `pandera`? sweet!
-if you'd like to contribute, please open an issue relating to the feature you'd like to work on,
-and then open a pr linked to your issue. when you open your pr, please add your changes to the [CHANGELOG](./CHANGELOG.md) under the `### added` or `### fixed` heading, as appropriate, with a link to your pr.
+Want to contribute to `pandera`? sweet!
 
-don't want to contribute code, but see something missing or broken? open an issue to report any bugs or errors you encounter.
+If you'd like to contribute, please open an issue relating to the feature you'd like to work on, and then open a Pull Request linked to your issue. When you open your PR, please add your changes to the [CHANGELOG](./CHANGELOG.md) under the `### added` or `### fixed` heading, as appropriate, with a link to your PR.
+
+Don't want to contribute code but see something missing or broken? Open an issue to report any bugs or errors you encounter.
 
 ### Code of Conduct
 
-before opening an issue or pr, please read (and adhere) to the following:
+Before opening an issue or pr, please read (and adhere) to the following:
 
 - be respectful
 - be polite
