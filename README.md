@@ -1,5 +1,7 @@
 # Pandera
 
+Pandera is a fun little package that lets you replace the word "pandemic" with a randomly selected, similar sounding word (I think we can all agree we're collectively pandemic fatigued 🙃)
+
 ## Installation
 
 this package can be installed using either `npm` or `yarn`
