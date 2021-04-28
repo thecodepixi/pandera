@@ -1,0 +1,12 @@
+{
+  "name": "pandera",
+  "version": "0.0.0",
+  "description": "random p words",
+  "main": "index.js",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "url": "https://github.com/thecodepixi/pandera"
+  },
+  "contributors": ["Emily Harber", "Yechiel Kalmenson"]
+}
