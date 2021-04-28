@@ -15,4 +15,5 @@ console.log("Choosing a word for you...");
     await new Promise(resolve => setTimeout(resolve, 5));
     writeToConsole();
   }
-})();
+})().then( () => console.log('') );
+
