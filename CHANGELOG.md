@@ -4,11 +4,12 @@
 
 ### Added
 
--
+- a spinner to the CLI
+- some more p-words
 
 ### Fixed
 
--
+- restructured the README
 
 ## 1.0.1
 
