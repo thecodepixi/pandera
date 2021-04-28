@@ -3,3 +3,5 @@ const WORDS = ["psychotic", "pneumatic", "phonetic", "Pacific", "prosthetic", "p
 function word() {
   return WORDS[Math.floor(Math.random() * WORDS.length)]
 }
+
+module.exports = word
