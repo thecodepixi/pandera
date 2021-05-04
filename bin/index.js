@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const word = require('../index')
+import word from "../index";
 
 function writeToConsole(output) {
   process.stdout.clearLine();
@@ -11,11 +11,11 @@ function writeToConsole(output) {
 console.log("Choosing a word for you...");
 
 (async function demo() {
-  for (let i = 0; i < 500; i++) {
-    await new Promise(resolve => setTimeout(resolve, 5));
-    let spinner = ["/ ", "—", "\\ ", "| "]
-    output = spinner[i % 4] + word()
+  for (let i = 0; i < 500; i += 1) {
+    // eslint-disable-next-line no-await-in-loop
+    await new Promise((resolve) => setTimeout(resolve, 5));
+    const spinner = ["/ ", "—", "\\ ", "| "];
+    const output = spinner[i % 4] + word();
     writeToConsole(output);
   }
-})().then( () => writeToConsole("=> " + word() + "\n") );
-
+})().then(() => writeToConsole(`=> ${word()}\n`));
