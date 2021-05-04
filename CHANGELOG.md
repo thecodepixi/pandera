@@ -4,7 +4,7 @@
 
 ### Added
 
--
+- Linting and formatting via ESLint and Prettier
 
 ### Fixed
 
