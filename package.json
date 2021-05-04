@@ -8,6 +8,7 @@
   "repository": {
     "url": "https://github.com/thecodepixi/pandera"
   },
+  "type": "module",
   "contributors": [
     "Emily Harber",
     "Yechiel Kalmenson"

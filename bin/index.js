@@ -1,6 +1,4 @@
-#!/usr/bin/env node
-
-import word from "../index";
+import word from "../index.js";
 
 function writeToConsole(output) {
   process.stdout.clearLine();
