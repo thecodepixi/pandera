@@ -8,6 +8,7 @@
   "repository": {
     "url": "https://github.com/thecodepixi/pandera"
   },
+  "type": "module",
   "contributors": [
     "Emily Harber",
     "Yechiel Kalmenson"
@@ -17,5 +18,31 @@
   },
   "bin": {
     "pandera": "bin/index.js"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "airbnb-base",
+      "plugin:prettier/recommended"
+    ],
+    "ignorePatterns": "node_modules/*.js",
+    "rules": {
+      "no-unused-vars": "warn",
+      "import/extensions": "disable"
+    },
+    "settings": {
+      "usePrettierrc": true
+    }
+  },
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.2.1"
   }
 }
