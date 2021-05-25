@@ -19,6 +19,24 @@
   "bin": {
     "pandera": "bin/index.js"
   },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "airbnb-base",
+      "plugin:prettier/recommended"
+    ],
+    "ignorePatterns": "node_modules/*.js",
+    "rules": {
+      "no-unused-vars": "warn",
+      "import/extensions": "disable"
+    },
+    "settings": {
+      "usePrettierrc": true
+    }
+  },
   "devDependencies": {
     "eslint": "^7.25.0",
     "eslint-config-airbnb-base": "^14.2.1",
