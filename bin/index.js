@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import word from "../index.js";
 
 function writeToConsole(output) {
