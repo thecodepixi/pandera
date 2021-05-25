@@ -2,6 +2,10 @@
 node_modules
 /dist
 
+# package lockfile
+# (if you run into package version conflicts later, unignore this)
+yarn.lock
+
 # log files
 npm-debug.log*
 yarn-debug.log*
